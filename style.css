@@ -168,6 +168,13 @@
         padding-left: 20px;
     }
 }
+@media only screen and (max-width: 768px) {
+    #banner-row{
+        text-align: center;
+        padding-bottom: 20px;
+    }
+
+}
 
 /* Service Start */
 #row-about {

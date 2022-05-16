@@ -1,356 +1,334 @@
 <!doctype html>
 <html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 
-<head>
-  <!-- Required meta tags -->
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-
-  <!-- Bootstrap Icon -->
+    <!-- Bootstrap Icon -->
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.2/font/bootstrap-icons.css">
 
-  <!-- Bootstrap CSS -->
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
-    integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
 
-  <!-- CSS -->
-  <link rel="stylesheet" href="style.css">
+    <!-- CSS File -->
+    <link rel="stylesheet" href="style.css">
 
-  <title>BS5 Demo</title>
-</head>
+    <title>BS5-Demo</title>
+  </head>
+  <body>
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    
+    <!-- NavBAR Start -->
 
-<body>
+        <nav class="navbar navbar-expand-lg navbar-light" id="navbar">
+            <div class="container-fluid" id="nav-div">
+            <a class="navbar-brand" href="#">
+                <img src="image/logo.png" class="img-fluid" id="logo">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="toggle-icon"><i class="bi bi-list"></i></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0 ">
 
-  <!-- NavBAR Start -->
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">About</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Service</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Contact</a>
+                </li>
+                </ul>
+                <form class="d-flex" id="search-div">
+                <input class="form-control me-2 " type="search" placeholder="Search..." aria-label="Search" id="searchbox">
+                <button class="btn btn-outline-success" type="submit" id="searchbtn"><i class="bi bi-search"></i></button>
+                </form>
+            </div>
+            </div>
+        </nav>
+    <!-- NavBAR End -->
 
-  <nav class="navbar navbar-expand-lg navbar-light" id="navbar">
-    <div class="container-fluid" id="nav-div">
-      <a class="navbar-brand" href="#">
-        <img src="image/logo.png" class="img-fluid" id="logo">
-      </a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
-        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="toggle-icon"><i class="bi bi-list"></i></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarSupportedContent">
-        <ul class="navbar-nav me-auto mb-2 mb-lg-0 ">
+    <!-- Container Fluid Start -->
+        <div class="container-fluid">
+            <!-- Banner Start -->
+                <div class="row justify-content-center pt-3" id="banner-row">
+                    <div class="col-sm-6 ">
+                        <h1>
+                            First I Wanted to be <br /> a veterinarian
+                        </h1>
+                        <p>
+                            Lorem ipsum dolor sit amet consectetur <br /> adipisicing elit. Fuga consequatur iusto <br /> iure maxime
+                            repudiandae impedit.
+                        </p>
+                        <div class="btn">
+                            <button type="button" class="btn" id="banner-btn1">Contact Us</button>
+                            <button type="button" class="btn" id="banner-btn2">Our Service</button>
+                        </div>
+                    </div>
 
-          <li class="nav-item">
-            <a class="nav-link" href="#">Home</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">About</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Service</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Contact</a>
-          </li>
-        </ul>
-        <form class="d-flex" id="search-div">
-          <input class="form-control me-2 " type="search" placeholder="Search..." aria-label="Search" id="searchbox">
-          <button class="btn btn-outline-success" type="submit" id="searchbtn"><i class="bi bi-search"></i></button>
-        </form>
-      </div>
-    </div>
-  </nav>
+                    <div class="col-sm-4 pt-3 pb-5 d-none d-sm-block">
+                        <img src="image/dog.png" class="img-fluid" id="dog-img">
+                    </div>
+                </div>
+            <!-- Banner End -->
 
-  <!-- NavBAR End -->
+            <!-- Service Start-->
+                <div class="row justify-content-center mt-5" id="row-about">
+                    <div class="col-md-5" id="col-about">
+                        <h2>
+                        As a veterinarian and <br /> lover of animals.
+                        </h2>
+                        <p>
+                        Lorem ipsum available but the majority <br />suffered alteration in some from, by <br />humour randomised
+                        words.
+                        </p>
+                        <button type="button" class="btn" id="about-btn">Our Service</button>
+                    </div>
 
-  <!-- Containter Fluid Start -->
-  <div class="container-fluid">
-    <!-- Banner Start -->
-    <div class="row justify-content-center pt-3" id="banner-row">
-      <div class="col-sm-6 ">
-        <h1>
-          First I Wanted to be <br /> a veterinarian
-        </h1>
-        <p>
-          Lorem ipsum dolor sit amet consectetur <br /> adipisicing elit. Fuga consequatur iusto <br /> iure maxime
-          repudiandae impedit.
-        </p>
-        <div class="btn">
-          <button type="button" class="btn" id="banner-btn1">Contact Us</button>
-          <button type="button" class="btn" id="banner-btn2">Our Service</button>
+                    <div class="col-md-5">
+                        <img src="image/Image1.png" class="img-fluid" id="img1" alt="">
+                    </div>
+                </div>
+            <!-- Service End-->
+
+            <!-- Title Start -->
+                <div class="row justify-content-center" id="row-title">
+                    <div class="col-12 text-center">
+                        <h1>Title Here</h1>
+                        <p>
+                            Lorem ipsum available. But the majority have <br /> suffered alternation in same form.
+                        </p>
+                    </div>
+                    <div class="row justify-content-center" id="row-title-decsription">
+                        <div class="col-md-3 text-center">
+                            <img src="image/Image11.png" class="img-fluid" alt="">
+                            <h2>Verterinarian</h2>
+                            <p>
+                            Lorem ipsum available. But <br /> the majority have suffered <br /> alternation in same.
+                            </p>
+                        </div>
+                
+                        <div class="col-md-3 text-center">
+                            <img src="image/Image12.png" class="img-fluid" alt="">
+                            <h2>Verterinarian care</h2>
+                            <p>
+                            Lorem ipsum available. But <br /> the majority have suffered <br /> alternation in same.
+                            </p>
+                        </div>
+                
+                        <div class="col-md-3 text-center">
+                            <img src="image/Image13.png" alt="" class="img-fluid">
+                            <h2>Dental care</h2>
+                            <p>
+                            Lorem ipsum available. But <br /> the majority have suffered <br /> alternation in same.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            <!-- Title End -->
+
+            <!-- Service-2 Start-->
+                <div class="row justify-content-center" id="row-service">
+                    <div class="col-md-5">
+                        <img src="image/Image2.png" class="img-fluid" id="img2" alt="">
+                    </div>
+            
+                    <div class="col-md-5 text-end" id="col-service">
+                        <h2>
+                        As a veterinarian and <br /> lover of animals.
+                        </h2>
+                        <p>
+                        Lorem ipsum available but the majority <br />suffered alteration in some from, by <br />humour randomised
+                        words.
+                        </p>
+                        <button type="button" class="btn" id="service-btn">Our Service</button>
+                    </div>
+                </div>
+            <!-- Service-2 End-->
+
+            <!-- Title-2 Start -->
+                <div class="row justify-content-center" id="row-title-2">
+                    <div class="col text-center">
+                        <h1>Title Here</h1>
+                        <p>
+                        Lorem ipsum available. But the majority have <br /> suffered alternation in same form.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="row justify-content-center" id="row-title-2-decsription">
+                    <div class="col-md-3 text-center">
+                        <img src="image/Image21.png" class="img-fluid" alt="">
+                        <h2><del>$50</del> &nbsp;$30</h2>
+                        <button type="button" class="btn" id="title-2-btn">Buy Now</button>
+                    </div>
+            
+                    <div class="col-md-3 text-center">
+                        <img src="image/Image22.png" class="img-fluid" alt="">
+                        <h2><del>$40</del> &nbsp; $25</h2>
+                        <button type="button" class="btn" id="title-2-btn">Buy Now</button>
+                    </div>
+            
+                    <div class="col-md-3 text-center">
+                        <img src="image/Image23.png" alt="" class="img-fluid">
+                        <h2><del>$45</del> &nbsp; $20</h2>
+                        <button type="button" class="btn" id="title-2-btn">Buy Now</button>
+                    </div>
+                </div>
+            <!-- Title-2 End -->
+
+            <!-- Our Team Start -->
+                <div class="row justify-content-center" id="row-team">
+                    <div class="col-12 text-center">
+                        <h1>The Vetcare team</h1>
+                        <p>
+                        Lorem ipsum available. But the majority have <br /> suffered alternation in same form.
+                        </p>
+                    </div>
+                </div>
+                <div class="row justify-content-center" id="row-team-decsription">
+                    <div class="col-md-3 text-center">
+                        <img src="image/Image31.png" class="img-fluid" alt="">
+                        <h2>Jennifer Mullen</h2>
+                        <p>VETERINARY</p>
+                        <span id="sm-ac">
+                            <a href="#"><i class="bi bi-instagram"></i></a>
+                            <a href="#"><i class="bi bi-facebook"></i></a>
+                            <a href="#"><i class="bi bi-twitter"></i></a>
+                            <a href="#"><i class="bi bi-whatsapp"></i></a>
+                        </span>
+                    </div>
+        
+                    <div class="col-md-3 text-center">
+                        <img src="image/Image32.png" class="img-fluid" alt="">
+                        <h2>Sheeren Collins</h2>
+                        <p>ADMINISTRARTION</p>
+                        <span id="sm-ac">
+                            <a href="#"><i class="bi bi-instagram"></i></a>
+                            <a href="#"><i class="bi bi-facebook"></i></a>
+                            <a href="#"><i class="bi bi-twitter"></i></a>
+                            <a href="#"><i class="bi bi-whatsapp"></i></a>
+                        </span>
+                    </div>
+        
+                    <div class="col-md-3 text-center">
+                        <img src="image/Image33.png" alt="" class="img-fluid">
+                        <h2>Jannifer Siyan</h2>
+                        <p>VETERINARY</p>
+                        <span id="sm-ac">
+                            <a href="#"><i class="bi bi-instagram"></i></a>
+                            <a href="#"><i class="bi bi-facebook"></i></a>
+                            <a href="#"><i class="bi bi-twitter"></i></a>
+                            <a href="#"><i class="bi bi-whatsapp"></i></a>
+                        </span>
+                    </div>
+                </div>
+            <!-- Our Team End -->
+
+            <!-- Counter start -->
+                <div class="row text-white justify-content-center pt-3" id="counter-row">
+                    <div class="col-md-3 text-center">
+                        <h1><i class="bi bi-heart-fill"></i></h1>
+                        <p>+34793</p>
+                        <p id="counter-p">Happy Clients</p>
+                    </div>
+                    <div class="col-md-3 text-center">
+                        <h1><i class="bi bi-building"></i></h1>
+                        <p>+45382</p>
+                        <p id="counter-p">Department</p>
+                    </div>
+                    <div class="col-md-3 text-center">
+                        <h1><i class="bi bi-bandaid"></i></h1>
+                        <p>+54762</p>
+                        <p id="counter-p">Vaccinations</p>
+                    </div>
+                </div>
+            <!-- Counter end -->
+
+            <!-- Blog Post Start -->
+                <div class="row justify-content-center">
+                    <div class="col text-center" id="blog-h">
+                        <h1>Recent Posts</h1>
+                        <p>Lorem ipsum available. But the majority have <br /> suffered alternation in same form.</p>
+                    </div>
+                </div>
+        
+                <div class="row justify-content-center " id="blog-d">
+                    <div class="col-md-3 mb-5" id="blog-d-c1">
+                        <img src="image/Image41.png" class="img-fluid" alt="">
+                        <h2> As a Verterinarian and <br /> lover for animals</h2>
+                        <a href="#">FEBRUARY 09,2020</a>
+                        <p>
+                        Lorem ipsum available, but the majo <br />rity have suffered alteration in same <br /> words which look.
+                        </p>
+                        <a href="#">Read More+</a>
+                    </div>
+            
+                    <div class="col-md-3 mb-5" id="blog-d-c1">
+                        <img src="image/Image42.png" class="img-fluid" alt="">
+                        <h2> As a Verterinarian and <br /> lover for animals</h2>
+                        <a href="#">FEBRUARY 10,2020</a>
+                        <p>
+                        Lorem ipsum available, but the majo <br />rity have suffered alteration in same <br /> words which look.
+                        </p>
+                        <a href="#">Read More+</a>
+                    </div>
+            
+                    <div class="col-md-3 mb-5" id="blog-d-c1">
+                        <img src="image/Image43.png" class="img-fluid" alt="">
+                        <h2> As a Verterinarian and <br /> lover for animals</h2>
+                        <a href="#">FEBRUARY 11,2020</a>
+                        <p>
+                        Lorem ipsum available, but the majo <br />rity have suffered alteration in same <br /> words which look.
+                        </p>
+                        <a href="#">Read More+</a>
+                    </div>
+                </div>
+            <!-- Blog Post End -->
+
+            <!-- Footer Start -->
+                <div class="row justify-content-center text-white" id="footer">
+                    <div class="col-md-3" id="footer-c">
+                        <h1>About</h1>
+                        <ul>
+                        <li> <a href="#">History</a> </li>
+                        <li> <a href="#">Our Team</a> </li>
+                        <li> <a href="#">Brand Guidlines</a> </li>
+                        <li> <a href="#">Terms&Condition</a> </li>
+                        <li> <a href="#">Privacy Policy</a> </li>
+                        </ul>
+                    </div>
+                    <div class="col-md-3" id="footer-c">
+                        <h1>Services</h1>
+                        <ul>
+                        <li> <a href="#">How to Order</a> </li>
+                        <li> <a href="#">Our Product</a> </li>
+                        <li> <a href="#">Order Status</a> </li>
+                        <li> <a href="#">Promo</a> </li>
+                        <li> <a href="#">Payment Method</a> </li>
+                        </ul>
+                    </div>
+                    <div class="col-md-3" id="footer-c">
+                        <h1>Social Media</h1>
+                        <p>Follow Our Social Media Handles.</p>
+                        <span id="sm-a">
+                        <a href="#"><i class="bi bi-instagram"></i></a>
+                        <a href="#"><i class="bi bi-facebook"></i></a>
+                        <a href="#"><i class="bi bi-twitter"></i></a>
+                        <a href="#"><i class="bi bi-whatsapp"></i></a>
+                        </span>
+                    </div>
+                </div>
+            <!-- Footer End -->
         </div>
-      </div>
-      <div class="col-sm-4 pt-3 pb-5 d-none d-sm-block">
-        <img src="image/dog.png" class="img-fluid" id="dog-img">
-      </div>
-    </div>
-  </div>
-  </div>
-  <!-- Banner End -->
-
-  <!-- Service Start-->
-  <div class="container-fluid">
-    <div class="row justify-content-center mt-5" id="row-about">
-      <div class="col-md-5" id="col-about">
-        <h2>
-          As a veterinarian and <br /> lover of animals.
-        </h2>
-        <p>
-          Lorem ipsum available but the majority <br />suffered alteration in some from, by <br />humour randomised
-          words.
-        </p>
-        <button type="button" class="btn" id="about-btn">Our Service</button>
-      </div>
-      <div class="col-md-5">
-        <img src="image/Image1.png" class="img-fluid" id="img1" alt="">
-      </div>
-    </div>
-  </div>
-  <!-- Service End-->
-
-  <!-- Title Start -->
-  <div class="container-fluid">
-    <div class="row justify-content-center" id="row-title">
-      <div class="col-12 text-center">
-        <h1>Title Here</h1>
-        <p>
-          Lorem ipsum available. But the majority have <br /> suffered alternation in same form.
-        </p>
-      </div>
-      <div class="row justify-content-center" id="row-title-decsription">
-        <div class="col-md-3 text-center">
-          <img src="image/Image11.png" class="img-fluid" alt="">
-          <h2>Verterinarian</h2>
-          <p>
-            Lorem ipsum available. But <br /> the majority have suffered <br /> alternation in same.
-          </p>
-        </div>
-
-        <div class="col-md-3 text-center">
-          <img src="image/Image12.png" class="img-fluid" alt="">
-          <h2>Verterinarian care</h2>
-          <p>
-            Lorem ipsum available. But <br /> the majority have suffered <br /> alternation in same.
-          </p>
-        </div>
-
-        <div class="col-md-3 text-center">
-          <img src="image/Image13.png" alt="" class="img-fluid">
-          <h2>Dental care</h2>
-          <p>
-            Lorem ipsum available. But <br /> the majority have suffered <br /> alternation in same.
-          </p>
-        </div>
-      </div>
-    </div>
-
-    <!-- Title End -->
-
-    <!-- Service-2 Start-->
-    <div class="container-fluid">
-      <div class="row justify-content-center mt-5" id="row-service">
-        <div class="col-md-5">
-          <img src="image/Image2.png" class="img-fluid" id="img2" alt="">
-        </div>
-
-        <div class="col-md-5 text-end" id="col-service">
-          <h2>
-            As a veterinarian and <br /> lover of animals.
-          </h2>
-          <p>
-            Lorem ipsum available but the majority <br />suffered alteration in some from, by <br />humour randomised
-            words.
-          </p>
-          <button type="button" class="btn" id="service-btn">Our Service</button>
-        </div>
-      </div>
-    </div>
-    <!-- Service-2 End-->
-
-    <!-- Title-2 Start -->
-    <div class="container-fluid">
-      <div class="row justify-content-center" id="row-title-2">
-        <div class="col text-center">
-          <h1>Title Here</h1>
-          <p>
-            Lorem ipsum available. But the majority have <br /> suffered alternation in same form.
-          </p>
-        </div>
-      </div>
-      <div class="row justify-content-center" id="row-title-2-decsription">
-        <div class="col-md-3 text-center">
-          <img src="image/Image21.png" class="img-fluid" alt="">
-          <h2><del>$50</del> &nbsp;$30</h2>
-          <button type="button" class="btn" id="title-2-btn">Buy Now</button>
-        </div>
-
-        <div class="col-md-3 text-center">
-          <img src="image/Image22.png" class="img-fluid" alt="">
-          <h2><del>$40</del> &nbsp; $25</h2>
-          <button type="button" class="btn" id="title-2-btn">Buy Now</button>
-        </div>
-
-        <div class="col-md-3 text-center">
-          <img src="image/Image23.png" alt="" class="img-fluid">
-          <h2><del>$45</del> &nbsp; $20</h2>
-          <button type="button" class="btn" id="title-2-btn">Buy Now</button>
-        </div>
-      </div>
-
-    </div>
-    <!-- Title-2 End -->
-
-    <!-- Our Team Start -->
-    <div class="container-fluid">
-      <div class="row justify-content-center" id="row-team">
-        <div class="col-12 text-center">
-          <h1>The Vetcare team</h1>
-          <p>
-            Lorem ipsum available. But the majority have <br /> suffered alternation in same form.
-          </p>
-        </div>
-        <div class="row justify-content-center" id="row-team-decsription">
-          <div class="col-md-3 text-center">
-            <img src="image/Image31.png" class="img-fluid" alt="">
-            <h2>Jennifer Mullen</h2>
-            <p>VETERINARY</p>
-            <span id="sm-ac">
-              <a href="#"><i class="bi bi-instagram"></i></a>
-              <a href="#"><i class="bi bi-facebook"></i></a>
-              <a href="#"><i class="bi bi-twitter"></i></a>
-              <a href="#"><i class="bi bi-whatsapp"></i></a>
-            </span>
-          </div>
-
-          <div class="col-md-3 text-center">
-            <img src="image/Image32.png" class="img-fluid" alt="">
-            <h2>Sheeren Collins</h2>
-            <p>ADMINISTRARTION</p>
-            <span id="sm-ac">
-              <a href="#"><i class="bi bi-instagram"></i></a>
-              <a href="#"><i class="bi bi-facebook"></i></a>
-              <a href="#"><i class="bi bi-twitter"></i></a>
-              <a href="#"><i class="bi bi-whatsapp"></i></a>
-            </span>
-          </div>
-
-          <div class="col-md-3 text-center">
-            <img src="image/Image33.png" alt="" class="img-fluid">
-            <h2>Jannifer Siyan</h2>
-            <p>VETERINARY</p>
-            <span id="sm-ac">
-              <a href="#"><i class="bi bi-instagram"></i></a>
-              <a href="#"><i class="bi bi-facebook"></i></a>
-              <a href="#"><i class="bi bi-twitter"></i></a>
-              <a href="#"><i class="bi bi-whatsapp"></i></a>
-            </span>
-          </div>
-        </div>
-      </div>
-    </div>
-    <!-- Our Team End -->
-
-    <!-- Counter start -->
-    <div class="container-fluid">
-      <div class="row text-white justify-content-center pt-3" id="counter-row">
-        <div class="col-md-3 text-center">
-          <h1><i class="bi bi-heart-fill"></i></h1>
-          <p>+34793</p>
-          <p id="counter-p">Happy Clients</p>
-        </div>
-        <div class="col-md-3 text-center">
-          <h1><i class="bi bi-building"></i></h1>
-          <p>+45382</p>
-          <p id="counter-p">Department</p>
-        </div>
-        <div class="col-md-3 text-center">
-          <h1><i class="bi bi-bandaid"></i></h1>
-          <p>+54762</p>
-          <p id="counter-p">Vaccinations</p>
-        </div>
-      </div>
-    </div>
-    <!-- Counter end -->
-
-    <!-- Blog Post Start -->
-    <div class="container-fluid">
-      <div class="row justify-content-center">
-        <div class="col text-center" id="blog-h">
-          <h1>Recent Posts</h1>
-          <p>Lorem ipsum available. But the majority have <br /> suffered alternation in same form.</p>
-        </div>
-      </div>
-
-      <div class="row justify-content-center " id="blog-d">
-        <div class="col-md-3 mb-5" id="blog-d-c1">
-          <img src="image/Image41.png" class="img-fluid" alt="">
-          <h2> As a Verterinarian and <br /> lover for animals</h2>
-          <a href="#">FEBRUARY 09,2020</a>
-          <p>
-            Lorem ipsum available, but the majo <br />rity have suffered alteration in same <br /> words which look.
-          </p>
-          <a href="#">Read More+</a>
-        </div>
-
-        <div class="col-md-3 mb-5" id="blog-d-c1">
-          <img src="image/Image42.png" class="img-fluid" alt="">
-          <h2> As a Verterinarian and <br /> lover for animals</h2>
-          <a href="#">FEBRUARY 10,2020</a>
-          <p>
-            Lorem ipsum available, but the majo <br />rity have suffered alteration in same <br /> words which look.
-          </p>
-          <a href="#">Read More+</a>
-        </div>
-
-        <div class="col-md-3 mb-5" id="blog-d-c1">
-          <img src="image/Image43.png" class="img-fluid" alt="">
-          <h2> As a Verterinarian and <br /> lover for animals</h2>
-          <a href="#">FEBRUARY 11,2020</a>
-          <p>
-            Lorem ipsum available, but the majo <br />rity have suffered alteration in same <br /> words which look.
-          </p>
-          <a href="#">Read More+</a>
-        </div>
-      </div>
-    </div>
-    <!-- Blog Post End -->
-
-    <!-- Footer Start -->
-    <div class="container-fluid">
-      <div class="row justify-content-center text-white" id="footer">
-        <div class="col-md-3" id="footer-c">
-          <h1>About</h1>
-          <ul>
-            <li> <a href="#">History</a> </li>
-            <li> <a href="#">Our Team</a> </li>
-            <li> <a href="#">Brand Guidlines</a> </li>
-            <li> <a href="#">Terms&Condition</a> </li>
-            <li> <a href="#">Privacy Policy</a> </li>
-          </ul>
-        </div>
-        <div class="col-md-3" id="footer-c">
-          <h1>Services</h1>
-          <ul>
-            <li> <a href="#">How to Order</a> </li>
-            <li> <a href="#">Our Product</a> </li>
-            <li> <a href="#">Order Status</a> </li>
-            <li> <a href="#">Promo</a> </li>
-            <li> <a href="#">Payment Method</a> </li>
-          </ul>
-        </div>
-        <div class="col-md-3" id="footer-c">
-          <h1>Social Media</h1>
-          <p>Follow Our Social Media Handles.</p>
-          <span id="sm-a">
-            <a href="#"><i class="bi bi-instagram"></i></a>
-            <a href="#"><i class="bi bi-facebook"></i></a>
-            <a href="#"><i class="bi bi-twitter"></i></a>
-            <a href="#"><i class="bi bi-whatsapp"></i></a>
-          </span>
-        </div>
-      </div>
-    </div>
-    <!-- Footer End -->
-
-    <!-- Bootstrap Bundle with Popper -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous">
-    </script>
-</body>
-
+    <!-- Container Fluid End -->
+  </body>
 </html>

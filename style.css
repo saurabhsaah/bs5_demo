@@ -1,6 +1,9 @@
 /* Navbar */
-
+html {
+    scroll-behavior: auto;
+  }
 #navbar{
+    box-shadow: 0px 1px 20px 1px #daac00;
     background-color: #daac00;
 }
 
@@ -75,6 +78,36 @@
 /* Navbar End */
 
 /* Banner Start */
+.scrollbtn{
+    background-color: #00bec9;
+    padding: 3px 10px;
+    border: solid rgba(0, 0, 0, 0.359);
+    border-radius: 1px;
+    border-radius: 100px;
+    position: fixed;
+    bottom: 50px;
+    right: 40px;
+    font-size: 25px;
+}
+.scrollbtn{
+    text-decoration: none;
+    color: white;
+}
+
+
+@media only screen and (max-width: 500px){
+    .scrollbtn{
+        right: 20px;
+    }
+}
+@media only screen and (max-width: 360px){
+    .scrollbtn{
+        opacity: 70%;
+        right: 10px;
+        font-size: 15px;
+        padding: 4px 8px;
+    }
+}
 #banner-row {
     background-color: #fcc302;
 }
@@ -309,6 +342,8 @@
 
 /* Service-2 Start */
 #row-service {
+    margin-left: 0%;
+    margin-right: 0%;
     padding-top: 50px;
     padding-bottom: 70px;
 }
@@ -519,7 +554,7 @@
 #counter-row {
     margin-bottom: 100px;
     margin-top: 80px;
-    background-image: url(image/image4.png);
+    background-image: url(image/Image4.png);
     background-size: cover;
 }
 

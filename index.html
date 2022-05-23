@@ -22,7 +22,7 @@
     
     <!-- NavBAR Start -->
 
-        <nav class="navbar navbar-expand-lg navbar-light" id="navbar">
+        <nav class="navbar navbar-expand-lg navbar-light sticky-top" id="navbar">
             <div class="container-fluid" id="nav-div">
             <a class="navbar-brand" href="#">
                 <img src="image/logo.png" class="img-fluid" id="logo">
@@ -38,13 +38,13 @@
                     <a class="nav-link" href="#">Home</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">About</a>
+                    <a class="nav-link" href="#footer">About</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">Service</a>
+                    <a class="nav-link" href="#row-title">Service</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">Contact</a>
+                    <a class="nav-link" href="#footer-c">Contact</a>
                 </li>
                 </ul>
                 <form class="d-flex" id="search-div">
@@ -57,6 +57,13 @@
     <!-- NavBAR End -->
 
     <!-- Container Fluid Start -->
+
+        <!-- Scroll Button -->
+            <a href="#" class="scrollbtn">
+                <i class="bi bi-chevron-double-up"></i>
+            </a>
+    <!-- Scroll Button -->
+
         <div class="container-fluid">
             <!-- Banner Start -->
                 <div class="row justify-content-center pt-3" id="banner-row">
@@ -75,7 +82,7 @@
                     </div>
 
                     <div class="col-sm-4 pt-3 pb-5 d-none d-sm-block">
-                        <img src="image/dog.png" class="img-fluid" id="dog-img">
+                        <img src="image/dog.png" class="img-fluid" id="dog-img" alt="Dog Image Loading....">
                     </div>
                 </div>
             <!-- Banner End -->
@@ -293,14 +300,14 @@
                     </div>
                 </div>
             <!-- Blog Post End -->
-
+                
             <!-- Footer Start -->
                 <div class="row justify-content-center text-white" id="footer">
                     <div class="col-md-3" id="footer-c">
                         <h1>About</h1>
                         <ul>
-                        <li> <a href="#">History</a> </li>
-                        <li> <a href="#">Our Team</a> </li>
+                        <li> <a href="#counter-row">History</a> </li>
+                        <li> <a href="#row-team">Our Team</a> </li>
                         <li> <a href="#">Brand Guidlines</a> </li>
                         <li> <a href="#">Terms&Condition</a> </li>
                         <li> <a href="#">Privacy Policy</a> </li>
@@ -310,7 +317,7 @@
                         <h1>Services</h1>
                         <ul>
                         <li> <a href="#">How to Order</a> </li>
-                        <li> <a href="#">Our Product</a> </li>
+                        <li> <a href="#row-title-2-decsription">Our Product</a> </li>
                         <li> <a href="#">Order Status</a> </li>
                         <li> <a href="#">Promo</a> </li>
                         <li> <a href="#">Payment Method</a> </li>
@@ -325,6 +332,11 @@
                         <a href="#"><i class="bi bi-twitter"></i></a>
                         <a href="#"><i class="bi bi-whatsapp"></i></a>
                         </span>
+                    </div>
+                </div>
+                <div class="row bg-dark">
+                    <div class="col text-white text-center pb-3 pt-3">
+                        All Rights Reserved. 
                     </div>
                 </div>
             <!-- Footer End -->

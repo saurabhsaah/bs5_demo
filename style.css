@@ -1,8 +1,9 @@
 /* Navbar */
 html {
     scroll-behavior: auto;
-  }
-#navbar{
+}
+
+#navbar {
     box-shadow: 0px 1px 20px 1px #daac00;
     background-color: #daac00;
 }
@@ -67,47 +68,75 @@ html {
         padding-bottom: 15px;
     }
 }
-@media only screen and (max-width: 400px){
+
+@media only screen and (max-width: 400px) {
     .btn {
         padding-bottom: 10px !important;
         padding-left: 0%;
-      }
+    }
 
 }
 
 /* Navbar End */
 
 /* Banner Start */
-.scrollbtn{
-    background-color: #00bec9;
-    padding: 3px 10px;
-    border: solid rgba(0, 0, 0, 0.359);
-    border-radius: 1px;
-    border-radius: 100px;
-    position: fixed;
-    bottom: 50px;
-    right: 40px;
-    font-size: 25px;
+
+/* Scroll Button */
+
+.scroll {
+    color: #fff;
+    margin-top: 100px;
 }
-.scrollbtn{
+
+#toTopBtn {
     text-decoration: none;
+    font-weight: bolder;
     color: white;
+    position: fixed;
+    bottom: 26px;
+    right: 39px;
+    z-index: 98;
+    padding: 10px 10px;
+    background-color:#00bec9;
+    border-radius: 100px;
+
 }
 
+.js .cd-top--fade-out {
+    opacity: .5;
+}
 
-@media only screen and (max-width: 500px){
-    .scrollbtn{
-        right: 20px;
-    }
+.js .cd-top--is-visible {
+    visibility: visible;
+    opacity: 1;
 }
-@media only screen and (max-width: 360px){
-    .scrollbtn{
-        opacity: 70%;
-        right: 10px;
-        font-size: 15px;
-        padding: 4px 8px;
-    }
+
+.js .cd-top {
+    visibility: hidden;
+    opacity: 0;
+    transition: opacity .3s, visibility .3s, background-color .3s;
 }
+
+.cd-top {
+    position: fixed;
+    bottom: 20px;
+    bottom: var(--cd-back-to-top-margin);
+    right: 20px;
+    right: var(--cd-back-to-top-margin);
+    display: inline-block;
+    height: 40px;
+    height: var(--cd-back-to-top-size);
+    width: 40px;
+    width: var(--cd-back-to-top-size);
+    box-shadow: 0 0 10px rgba(0, 0, 0, .05) !important;
+}
+
+.height {
+    height: 3000px;
+}
+
+/* Scroll Button */
+
 #banner-row {
     background-color: #fcc302;
 }
@@ -201,8 +230,9 @@ html {
         padding-left: 20px;
     }
 }
+
 @media only screen and (max-width: 768px) {
-    #banner-row{
+    #banner-row {
         text-align: center;
         padding-bottom: 20px;
     }
@@ -277,8 +307,9 @@ html {
         width: 90%;
     }
 }
-@media only screen and (max-width:768px){
-    #col-about{
+
+@media only screen and (max-width:768px) {
+    #col-about {
         text-align: center;
     }
 
@@ -413,8 +444,9 @@ html {
         width: 90%;
     }
 }
-@media only screen and (max-width:768px){
-    #col-service{
+
+@media only screen and (max-width:768px) {
+    #col-service {
         text-align: center !important;
     }
 
